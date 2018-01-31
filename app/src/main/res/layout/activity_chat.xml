@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zjz.chatbyp2p.ui.ChatActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/btn_chat_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/ic_arrow_back_white_36dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/tv_chat_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/btn_chat_file"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/file"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_chat_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_chat_title"
+        android:layout_above="@+id/line_chat_2">
+
+    </ListView>
+
+    <View
+        android:id="@+id/line_chat_2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#bebebe"
+        android:layout_above="@+id/ll_chat_send"
+        />
+    <LinearLayout
+        android:id="@+id/ll_chat_send"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/et_chat_send"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_weight="10"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:id="@+id/btn_chat_send"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发送"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

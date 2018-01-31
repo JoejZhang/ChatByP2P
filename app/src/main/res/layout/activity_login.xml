@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zjz.chatbyp2p.ui.LoginAcitivty">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:textSize="18sp"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:textColor="#FFFFFF"
+    android:text="用户登录"/>
+
+    <EditText
+        android:id="@+id/et_login_name"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="70dp"
+        android:hint="请输入用户名"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp"/>
+
+</LinearLayout>
