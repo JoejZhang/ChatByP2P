@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
         MulticastSocket multicastSocket;
         try {
             multicastSocket = new MulticastSocket();
-            InetAddress address = InetAddress.getByName("239.0.0.1"); // 必须使用D类地址
+            InetAddress address = InetAddress.getByName("xxx.x.x.x"); // 必须使用D类地址
             multicastSocket.joinGroup(address); // 以D类地址为标识，加入同一个组才能实现广播
 
             while (true) {
